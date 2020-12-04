@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MC 196 Project 2</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="project2.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.22/datatables.min.css"/>  
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.22/datatables.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/dumbbell.js"></script> 
+    <script src="https://code.highcharts.com/modules/lollipop.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Crime in Wichita, Kansas</h1>
+    <h3>Comparing 2018 and 2019</h3>
+    <p>By Macy Steinlage</p>
+    <p>Last Updated: December 3, 2020</p>
+    <br>
+    <div id="chart"></div>
+    <div class="container">
+
+         <h4>Crime type and frequency</h4>
+         <p>The figures below are provided by <a href="https://ucr.fbi.gov/crime-in-the-u.s/2019/">The FBI's US crime report </a>.</p>
+        <table id="dt-table" style="text-align: left;">
+            <thead>
+                <tr>
+                    <th>Crime</th>
+                    <th>fips</th>
+                    <th>2018</th>
+                    <th>2019</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Violent crime</td>
+                    <td>1</td>
+                    <td>2361</td>
+                    <td>2305</td>
+                </tr>
+                <tr>
+                    <td>Murder</td>
+                    <td>2</td>
+                    <td>24</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>Rape</td>
+                    <td>3</td>
+                    <td>201</td>
+                    <td>177</td>
+                </tr>
+                <tr>
+                    <td>Robbery</td>
+                    <td>4</td>
+                    <td>274</td>
+                    <td>203</td>
+                </tr>
+                <tr>
+                    <td>Aggravated Assault</td>
+                    <td>5</td>
+                    <td>1862</td>
+                    <td>1642</td>
+                </tr>
+                <tr>
+                    <td>Property Crime</td>
+                    <td>6</td>
+                    <td>10710</td>
+                    <td>9502</td>
+                </tr>
+                <tr>
+                    <td>Burglary</td>
+                    <td>7</td>
+                    <td>1673</td>
+                    <td>1299</td>
+                </tr>
+                <tr>
+                    <td>Larceny - theft</td>
+                    <td>8</td>
+                    <td>7649</td>
+                    <td>7111</td>
+                </tr>
+                <tr>
+                    <td>Motor Vehicle theft</td>
+                    <td>9</td>
+                    <td>1388</td>
+                    <td>1092</td>
+                </tr>
+                <tr>
+                    <td>Arson</td>
+                    <td>10</td>
+                    <td>77</td>
+                    <td>59</td>
+                </tr>
+            </tbody>   
+         </table>
+    </div>
+
+    
+    <footer>
+        <p>This webpage was created by Macy Steinlage</p>
+    </footer>
+    
+</body>
+</html>
