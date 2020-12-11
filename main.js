@@ -13,8 +13,8 @@ function getTableData(table) {
     table.rows({ search: "applied" }).every(function() {
         const data = this.data();
         crime.push(data[0]);
-        y2018.push(parseInt(data[2].replace(/\,/g, "")));
-        y2019.push(parseInt(data[3].replace(/\,/g, "")));
+        y2018.push(parseInt(data[1].replace(/\,/g, "")));
+        y2019.push(parseInt(data[2].replace(/\,/g, "")));
     });
     data.push(crime, y2018, y2019);
     return data;
